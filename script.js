@@ -91,7 +91,7 @@ function generate() {
                 `).join('')}
                 <tr>
                     <td colspan="2" class="border px-4 py-2 font-bold">Niveau</td>
-                    <td class="border px-4 py-2 font-bold">${points <= 2 ? "A1" : points == 6 ? "B1" : points == 8 ? "B2" : points == 9 ? "C1" : points == 10 ? "C2" : ""}</td>
+                    <td class="border px-4 py-2 font-bold">${points <= 2 ? "A1" : points <= 6 ? "B1" : points <= 8 ? "B2" : points <= 9 ? "C1" : points <= 10 ? "C2" : ""}</td>
                 </tr>
                 <tr>
                     <td colspan="2" class="border px-4 py-2 font-bold">Score</td>
