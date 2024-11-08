@@ -120,7 +120,7 @@ function score(pts) {
                 <div class="flex justify-center mb-6">
                     <div class="w-32 h-32 rounded-full bg-[#0095FF] flex items-center justify-center">
                         <div class="text-white text-center">
-                            <div class="text-4xl font-bold">${pts <= 2 ? "A1" : pts == 6 ? "B1" : pts == 8 ? "B2" : pts == 9 ? "C1" : pts == 10 ? "C2" : ""}</div>
+                            <div class="text-4xl font-bold">${pts <= 2 ? "A1" : pts <= 6 ? "B1" : pts <= 8 ? "B2" : pts <= 9 ? "C1" : pts <= 10 ? "C2" : ""}</div>
                             <div class="text-sm">Niveau</div>
                         </div>
                     </div>
