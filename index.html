@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALZAC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body class="bg-blue-500 min-h-screen relative">
+    <div class="bg-white px-4 py-2 rounded-full shadow-lg flex justify-between" style="margin: 10px;">
+        <span class="text-blue-500 font-bold">Points: <span id="points">0</span></span>
+        <i class="fas fa-history fa-xl text-blue-500 cursor-pointer" onclick="history()" style="margin: 10px;"></i>
+    </div>
+
+    <div class="flex flex-col items-center p-4 md:p-8 pb-24" id="everything">
+        <header class="w-full text-center mb-8 md:mb-16">
+            <h1 class="text-white text-4xl md:text-6xl font-bold tracking-wider">BALZAC</h1>
+        </header>
+
+        <main class="w-full max-w-3xl mx-auto">
+            <div class="bg-white rounded-3xl p-6 md:p-8 mb-8 shadow-lg" style="position: relative;">
+                <div id="countdown"
+                    class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold"
+                    style="position: absolute; right: -8px; top: -8px;">
+                    20</div>
+                <h2 id="questionText" class="text-gray-800 text-2xl md:text-4xl font-bold mb-2">QUestion</h2>
+            </div>
+
+            <div id="answerButtons" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            </div>
+        </main>
+    </div>
+
+    <button id="next"
+        class="bg-white hover:bg-gray-100 text-blue-500 py-2 px-8 rounded-full text-lg font-bold"
+        style="position: fixed; bottom: 32px; right: 32px;">
+        NEXT
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
